@@ -21,7 +21,7 @@ def test_post_item_valid_body():
 
 
 # -----------------------------
-# TC-201 - Создание без обязательных полей
+# TC-202 - Создание без обязательных полей
 # -----------------------------
 def test_post_item_missing_required_fields():
     payload = {
@@ -35,7 +35,7 @@ def test_post_item_missing_required_fields():
 
 
 # -----------------------------
-# TC-202 - SellerID слишком большое число
+# TC-203 - SellerID слишком большое число
 # -----------------------------
 def test_post_item_sellerid_too_large():
     payload = {
@@ -49,7 +49,7 @@ def test_post_item_sellerid_too_large():
 
 
 # -----------------------------
-# TC-203 - Идемпотентность
+# TC-204 - Идемпотентность
 # -----------------------------
 def test_post_item_idempotency():
     payload = {
@@ -69,7 +69,7 @@ def test_post_item_idempotency():
 
 
 # -----------------------------
-# TC-204 - Отрицательные значения statistics
+# TC-205 - Отрицательные значения statistics
 # -----------------------------
 def test_post_item_negative_statistics():
     payload = {
@@ -84,7 +84,7 @@ def test_post_item_negative_statistics():
 
 
 # -----------------------------
-# TC-205 - SellerID в виде строки
+# TC-206 - SellerID в виде строки
 # -----------------------------
 def test_post_item_sellerid_string():
     payload = {
@@ -98,7 +98,7 @@ def test_post_item_sellerid_string():
 
 
 # -----------------------------
-# TC-206 - Цена = 0
+# TC-207 - Цена = 0
 # -----------------------------
 def test_post_item_price_zero():
     payload = {
@@ -112,7 +112,7 @@ def test_post_item_price_zero():
 
 
 # -----------------------------
-# TC-207 - Пустое название
+# TC-208 - Пустое название
 # -----------------------------
 def test_post_item_empty_name():
     payload = {
@@ -126,7 +126,7 @@ def test_post_item_empty_name():
 
 
 # -----------------------------
-# TC-208 - Без Content-Type
+# TC-209 - Без Content-Type
 # -----------------------------
 def test_post_item_no_content_type():
     payload = '{"sellerId":123456,"name":"Ноутбук","price":5000,"statistics":{"likes":1,"viewCount":1,"contacts":1}}'
@@ -137,7 +137,7 @@ def test_post_item_no_content_type():
 
 
 # -----------------------------
-# TC-209 - Content-Type: text/plain
+# TC-210  - Content-Type: text/plain
 # -----------------------------
 def test_post_item_text_plain():
     payload = '{"sellerId":123456,"name":"Ноутбук","price":5000,"statistics":{"likes":1,"viewCount":1,"contacts":1}}'
@@ -147,7 +147,7 @@ def test_post_item_text_plain():
 
 
 # -----------------------------
-# TC-210 - Лишние поля
+# TC-211 - Лишние поля
 # -----------------------------
 def test_post_item_extra_fields():
     payload = {
