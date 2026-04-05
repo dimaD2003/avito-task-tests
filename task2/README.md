@@ -6,8 +6,8 @@
 
 Клонируем репозиторий:
 ```bash
-git clone <URL_REPO>
-cd 
+git clone https://github.com/dimaD2003/avito-task-tests.git
+cd avito-task-tests/task2
 ```
 ## 2. Установка зависимостей
 
