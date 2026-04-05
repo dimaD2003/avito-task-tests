@@ -39,11 +39,7 @@ pytest -v test/test_get_seller.py
 pytest -v test/test_get_statistic.py
 pytest -v test/test_post_item.py
 ```
-
-3. Установить зависимости:
-```bash
-pip install -r requirements.txt
-```
+* В ходе выплнения тестов должно не пройти 3 тетса , н акаждый есть баг-репорт в в файле  **BUGS.md** *
 
 ## 3. Линтеры
 ### Конфигурация линтеров и форматтеров
