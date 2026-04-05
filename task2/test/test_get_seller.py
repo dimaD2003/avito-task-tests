@@ -146,7 +146,7 @@ def test_get_items_null():
 
 
 # ------------------------
-# TC-409
+# TC-408
 # ------------------------
 def test_get_items_no_accept_header(create_item):
     seller_id = 123461
