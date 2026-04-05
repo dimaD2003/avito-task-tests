@@ -15,11 +15,13 @@ cd avito-task-tests/task2
 
 1. Создать окружение с Python 3.10:
 ```bash
-conda create -n avito-tests python=3.10 -y
+python -m venv venv
+
+python3 -m venv venv
 ```
 2. Активировать окружение
 ```bash
-conda activate avito-tests
+source venv/bin/activate  # или venv\Scripts\activate
 ```
 
 3. Установить зависимости:
@@ -39,7 +41,7 @@ pytest -v test/test_get_seller.py
 pytest -v test/test_get_statistic.py
 pytest -v test/test_post_item.py
 ```
-* В ходе выплнения тестов должно не пройти 3 тетса , н акаждый есть баг-репорт в в файле  **BUGS.md** *
+* В ходе выплнения тестов должно не пройти 3 тетса , н акаждый есть баг-репорт в в файле  **BUGS.md** 
 
 ## 3. Линтеры
 ### Конфигурация линтеров и форматтеров
